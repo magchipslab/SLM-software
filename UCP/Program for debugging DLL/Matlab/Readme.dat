@@ -1,0 +1,14 @@
+Place matlab files in this dir 
+They must have this form
+function data = file_name()
+with data an array of return values (or no return values)
+
+a matlab file with the name file_name_init can be placed in this dir. This file is runned once
+
+Furthermore a file with the name file_name.txt must be placed in this folder. This file has the following format
+
+MaximCam_MatlabFileDescriptor
+Number_of_return_values	2
+Return_value_names
+Name1
+Name2

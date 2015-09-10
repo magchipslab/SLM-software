@@ -1,0 +1,92 @@
+#  $Revision: 1.1.10.5.4.1 $
+#  Copyright 2008-2011 The MathWorks, Inc.
+
+sub msvc80opts 
+{
+    my $input = shift;
+    my $default_location = "C:\\Program Files\\Microsoft Visual Studio 8";
+    my $registry_lookup_fcn = $input->{"registry_lookup"};
+
+    my @language_handled = ('C');
+    my $locate_fcn = sub {
+        my @valid_locations = ();
+        my $env_location;
+        my $registry_location;
+        my $candidate_location;
+
+        my $is_valid_root_fcn = sub {
+            my $candidate_location = shift;
+            my $isvalid = 0;
+            if ($candidate_location ne "" &&  
+                -e "$candidate_location\\VC\\bin\\cl.exe" &&
+                -e "$candidate_location\\Common7\\IDE\\devenv.exe" ) { 
+                $oldPath = $ENV{'PATH'};
+                $ENV{'PATH'} = "$candidate_location\\Common7\\IDE;$oldPath";
+                if (&correct_version("$candidate_location\\VC\\bin\\cl.exe","14.0")){ 
+                    $isvalid = 1;
+                }
+                $ENV{'PATH'} = "$oldPath";
+            }
+            return $isvalid;
+        };
+
+        # Search the default environment variable location. 
+        # Since MSVC 2005 Professional ed. and the Express ed.
+        # use the same environment variable (VS80COMNTOOLS),
+        # use the directory structure to differentiate between the two.
+        $env_location = $ENV{'VS80COMNTOOLS'}; 
+        $env_location =~ s|\\+Common7\\+Tools\\*$||i; 
+        $candidate_location = $env_location;
+        if (&$is_valid_root_fcn($candidate_location)) {
+            push(@valid_locations, $candidate_location);
+        }
+
+        # Search the registry. 
+        $registry_location = &$registry_lookup_fcn("SOFTWARE\\Microsoft\\VisualStudio\\8.0\\" . 
+                                            "Setup\\VC", "ProductDir");
+        $registry_location =~ s|\\VC\\$||i; 
+        $candidate_location = $registry_location;
+        if (&$is_valid_root_fcn($candidate_location)) {
+            push(@valid_locations, $candidate_location);
+        }
+
+        # Search the default install location. 
+        $candidate_location = $default_location;
+        if (&$is_valid_root_fcn($candidate_location)) {
+            push(@valid_locations, $candidate_location);
+        }
+
+        return @valid_locations;
+    };
+
+    my $root_val = sub {
+        my $base_directory = shift;
+
+        if (!-d "$base_directory\\Common7" || !-d "$base_directory\\VC"){
+              print "\n  Warning: MEX requires that the Microsoft Visual C++ 2005 directories \n" .
+                    "           \"VC\" and \"Common7\" be located within the same parent\n" .
+                    "           directory. MEX setup expected to find directories named\n" .
+                    "           \"Common7\" and \"VC\" in the directory: \n" .
+                    "           \"$base_directory\".\n"; 
+        }
+
+        # Warn about upcoming deprecation of this compiler
+        print(mexDeprecationWarning("Microsoft Visual C++ 2005 SP1"));
+
+        return $base_directory;
+    };
+
+    return {
+        "vendor_name"      => "Microsoft Visual C++ 2005 SP1",
+        "version"          => "",                          #This version is left blank intentionally. 
+        "group_id"         => "MSVC",
+        "serial"           => 8.0,
+        "root_var"         => "VSINSTALLDIR",
+        "optfile_name"     => "msvc80opts.bat",
+        "default_location" => $default_location,
+        "language_handled" => \@language_handled,
+        "root_val"         => $root_val,
+        "locate"           => $locate_fcn,
+        };
+}
+1;

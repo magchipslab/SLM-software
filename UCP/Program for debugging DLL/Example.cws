@@ -1,0 +1,201 @@
+[Workspace Header]
+Version = 900
+Pathname = "/s/bunches/cvi/General/Program for debugging DLL/Example.cws"
+CVI Dir = "/c/program files/national instruments/cvi90"
+CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/Documents and Settings/All Users/Application Data/National Instruments/CVI90"
+CVI Pub Global Dir = "/C/Documents and Settings/All Users/Application Data/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files/IVI Foundation/VISA/winnt"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "Example.prj"
+Drag Bar Left = 322
+Window Top = 32
+Window Left = 22
+Window Bottom = 500
+Window Right = 1384
+Maximized = True
+Maximized Children = True
+Max Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win For Warnings = True
+Show Build Dialog = False
+Save Changes Before Running = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 4
+Window Confinement Region Enabled = True
+MainColumnWidth = 303
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+StatusColumnWidth = 70
+
+[Project Header 0001]
+Version = 900
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+Force Rebuild = False
+
+[File 0001]
+Path = "/s/bunches/cvi/Experiment monitor/ExpMonitor_Client.c"
+File Type = "CSource"
+Disk Date = 3399287465
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Z-Order = 1
+Source Window State = "1,127,127,127,21,39,39,0,0,155,0,0,0,0,0,48,108,0,131,41,427,855,1,0,"
+
+[File 0002]
+Path = "/s/bunches/cvi/General/Program for debugging DLL/Example.c"
+File Type = "CSource"
+Disk Date = 3399286859
+In Projects = "1,"
+Window Top = 62
+Window Left = 22
+Window Z-Order = 2
+Source Window State = "1,432,435,432,4,41,4,0,0,80,0,335,0,0,0,25,402,0,432,4,427,855,1,11,"
+
+[File 0003]
+Path = "/s/bunches/cvi/General/Program for debugging DLL/Example.uir"
+File Type = "User Interface Resource"
+Disk Date = 3377155460
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Window Height = 427
+Window Width = 855
+Window Z-Order = 4
+
+[File 0004]
+Path = "/s/bunches/cvi/General/Misc_General_Functions.c"
+File Type = "CSource"
+Disk Date = 3397808654
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Window Z-Order = 3
+Source Window State = "1,91,91,91,5,19,19,0,3,80,0,84,0,0,0,25,84,0,91,5,427,855,1,12,"
+
+[File 0005]
+Path = "/s/bunches/cvi/Experiment Monitor/Experiment_Monitor_Timer.uir"
+File Type = "User Interface Resource"
+Disk Date = 3357123651
+In Projects = "1,"
+Window Top = 482
+Window Left = 246
+Window Height = 427
+Window Width = 855
+
+[File 0006]
+Path = "/s/bunches/cvi/Experiment Monitor/ExpMonitor_Client.h"
+File Type = "Include"
+Disk Date = 3395207073
+In Projects = "1,"
+Window Top = 152
+Window Left = 70
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,855,1,0,"
+
+[File 0007]
+Path = "/s/bunches/cvi/General/General_DLL.h"
+File Type = "Include"
+Disk Date = 3397806272
+In Projects = "1,"
+Window Top = 242
+Window Left = 118
+Source Window State = "1,172,172,172,0,47,0,0,3,0,0,0,0,0,0,0,144,0,172,47,427,855,1,0,"
+
+[File 0008]
+Path = "/s/bunches/cvi/General/Matlab/Matlab.h"
+File Type = "Include"
+Disk Date = 3395207093
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0009]
+Path = "/s/bunches/cvi/General/Matlab/Matlab.obj"
+File Type = "Object"
+Disk Date = 3354783189
+In Projects = "1,"
+
+[File 0010]
+Path = "/s/bunches/cvi/General/Matlab/MatlabFunctions.c"
+File Type = "CSource"
+Disk Date = 3397538042
+In Projects = "1,"
+Window Top = 332
+Window Left = 166
+Source Window State = "1,76,76,76,11,31,31,0,0,0,0,0,0,0,0,0,8,0,76,25,427,855,1,0,"
+
+[File 0011]
+Path = "/s/bunches/cvi/General/Message Window/Message_window.uir"
+File Type = "User Interface Resource"
+Disk Date = 3376899867
+In Projects = "1,"
+
+[File 0012]
+Path = "/s/bunches/cvi/General/Message Window/Message_window_functions.c"
+File Type = "CSource"
+Disk Date = 3395207098
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,0,34,28,427,855,1,0,"
+
+[File 0013]
+Path = "/s/bunches/cvi/ScanController/ScanController_Client.c"
+File Type = "CSource"
+Disk Date = 3395207076
+In Projects = "1,"
+Window Top = 62
+Window Left = 22
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,308,0,320,13,427,855,1,0,"
+
+[File 0014]
+Path = "/s/bunches/cvi/ScanController/ScanController_Client.h"
+File Type = "Include"
+Disk Date = 3395207076
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+

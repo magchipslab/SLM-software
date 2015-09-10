@@ -1,0 +1,71 @@
+# $Revision: 1.1.6.5 $
+
+use mexutils;
+
+sub openwatcopts
+{
+    my $input = shift;
+    my $default_location = "C:\\watcom";
+
+    my @language_handled = ('C');
+    my $supportedVersion = "1.8";
+    my $version;
+    my $envExecutable = "$ENV{'WATCOM'}\\binnt\\wcc386.exe";
+    my $defaultExecutable = "$default_location\\binnt\\wcc386.exe";
+    
+    if (-e $envExecutable) {
+       $version = `"$envExecutable" -v`;
+    } elsif (-e $defaultExecutable) {
+       $version = `"$defaultExecutable" -v`;
+    } else {
+        $version = "";
+    }
+
+
+    my $locate_fcn = sub {
+        my @watcom_roots = ();
+
+        if ($ENV{'WATCOM'} ne "" && (-e $envExecutable))
+        { 
+            push(@watcom_roots, $ENV{'WATCOM'});
+        }
+        
+        if (-e $defaultExecutable)
+        {
+            push(@watcom_roots, $default_location);
+        }
+
+        return @watcom_roots;
+    };
+
+    my $root_val = sub {
+        if (!($version =~ /Version $supportedVersion/)) {
+            my $supportedCompilerListLocation = mexSupportedCompilerListLocation;
+            print "\n***************************************************************************\n" .
+                  "  Warning: This Watcom compiler is not supported.  Use at your own risk. \n" . 
+                  "           For a list of currently supported compilers see: \n" . 
+                  "           $supportedCompilerListLocation\n" .
+                  "***************************************************************************\n";
+        }
+        return shift;
+    };
+
+    my $verNumber;
+    if ($version =~ /Version $supportedVersion/) {
+        $verNumber = $supportedVersion;
+    }
+
+    return {
+        "vendor_name"  => "Open WATCOM C++",
+        "version"      => "$verNumber",
+        "group_id"     => "WATCOMC",
+        "serial"       => 3.0,
+        "root_var"     => "WATCOM",
+        "optfile_name" => "openwatcopts.bat",
+        "default_location" => $default_location,
+        "language_handled" => \@language_handled,
+        "root_val"     => $root_val,
+        "locate"       => $locate_fcn
+        };
+}
+1;

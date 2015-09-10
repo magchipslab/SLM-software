@@ -1,0 +1,389 @@
+[Project Header]
+Version = 900
+Pathname = "/s/bunches/cvi/General/General_DLL.prj"
+CVI Dir = "/c/program files/national instruments/cvi90"
+CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/Documents and Settings/All Users/Application Data/National Instruments/CVI90"
+CVI Pub Global Dir = "/C/Documents and Settings/All Users/Application Data/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files/IVI"
+VXIplug&play Framework Dir = "/c/vxipnp/winnt"
+Number of Files = 23
+Target Type = "Dynamic Link Library"
+Flags = 16
+Copied From Locked InstrDrv Directory = False
+Copied from VXIPNP Directory = False
+Locked InstrDrv Name = ""
+Don't Display Deploy InstrDrv Dialog = False
+
+[File 0001]
+File Type = "Include"
+Res Id = 1
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../Experiment Monitor/Experiment_Monitor_Timer.h"
+Path = "/s/bunches/cvi/Experiment Monitor/Experiment_Monitor_Timer.h"
+Exclude = False
+Project Flags = 0
+Folder = "Experiment Monitor"
+
+[File 0002]
+File Type = "User Interface Resource"
+Res Id = 2
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../Experiment Monitor/Experiment_Monitor_Timer.uir"
+Path = "/s/bunches/cvi/Experiment Monitor/Experiment_Monitor_Timer.uir"
+Exclude = False
+Project Flags = 0
+Folder = "Experiment Monitor"
+
+[File 0003]
+File Type = "CSource"
+Res Id = 3
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../Experiment Monitor/ExpMonitor_Client.c"
+Path = "/s/bunches/cvi/Experiment Monitor/ExpMonitor_Client.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Experiment Monitor"
+
+[File 0004]
+File Type = "Include"
+Res Id = 4
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../Experiment Monitor/ExpMonitor_Client.h"
+Path = "/s/bunches/cvi/Experiment Monitor/ExpMonitor_Client.h"
+Exclude = False
+Project Flags = 0
+Folder = "Experiment Monitor"
+
+[File 0005]
+File Type = "CSource"
+Res Id = 5
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Fit_NLLS/fit_Axb.c"
+Path = "/s/bunches/cvi/General/Fit_NLLS/fit_Axb.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Fit_NLLS"
+
+[File 0006]
+File Type = "CSource"
+Res Id = 6
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Fit_NLLS/fit_compiler.c"
+Path = "/s/bunches/cvi/General/Fit_NLLS/fit_compiler.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Fit_NLLS"
+
+[File 0007]
+File Type = "Include"
+Res Id = 7
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Fit_NLLS/fit_compiler.h"
+Path = "/s/bunches/cvi/General/Fit_NLLS/fit_compiler.h"
+Exclude = False
+Project Flags = 0
+Folder = "Fit_NLLS"
+
+[File 0008]
+File Type = "Include"
+Res Id = 8
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Fit_NLLS/fit_levmar.h"
+Path = "/s/bunches/cvi/General/Fit_NLLS/fit_levmar.h"
+Exclude = False
+Project Flags = 0
+Folder = "Fit_NLLS"
+
+[File 0009]
+File Type = "CSource"
+Res Id = 9
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Fit_NLLS/fit_lm.c"
+Path = "/s/bunches/cvi/General/Fit_NLLS/fit_lm.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Fit_NLLS"
+
+[File 0010]
+File Type = "Include"
+Res Id = 10
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Fit_NLLS/fit_lm.h"
+Path = "/s/bunches/cvi/General/Fit_NLLS/fit_lm.h"
+Exclude = False
+Project Flags = 0
+Folder = "Fit_NLLS"
+
+[File 0011]
+File Type = "CSource"
+Res Id = 11
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Fit_NLLS/fit_misc.c"
+Path = "/s/bunches/cvi/General/Fit_NLLS/fit_misc.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Fit_NLLS"
+
+[File 0012]
+File Type = "Include"
+Res Id = 12
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Fit_NLLS/fit_misc.h"
+Path = "/s/bunches/cvi/General/Fit_NLLS/fit_misc.h"
+Exclude = False
+Project Flags = 0
+Folder = "Fit_NLLS"
+
+[File 0013]
+File Type = "Include"
+Res Id = 13
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "General_DLL.h"
+Path = "/s/bunches/cvi/General/General_DLL.h"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0014]
+File Type = "CSource"
+Res Id = 14
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Matlab/Matlab.c"
+Path = "/s/bunches/cvi/General/Matlab/Matlab.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Matlab"
+
+[File 0015]
+File Type = "Function Panel"
+Res Id = 15
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Matlab/Matlab.fp"
+Path = "/s/bunches/cvi/General/Matlab/Matlab.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Matlab"
+
+[File 0016]
+File Type = "Include"
+Res Id = 16
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Matlab/Matlab.h"
+Path = "/s/bunches/cvi/General/Matlab/Matlab.h"
+Exclude = False
+Project Flags = 0
+Folder = "Matlab"
+
+[File 0017]
+File Type = "CSource"
+Res Id = 17
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Matlab/MatlabFunctions.c"
+Path = "/s/bunches/cvi/General/Matlab/MatlabFunctions.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Matlab"
+
+[File 0018]
+File Type = "Include"
+Res Id = 18
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Message Window/Message_window.h"
+Path = "/s/bunches/cvi/General/Message Window/Message_window.h"
+Exclude = False
+Project Flags = 0
+Folder = "Message Window"
+
+[File 0019]
+File Type = "User Interface Resource"
+Res Id = 19
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Message Window/Message_window.uir"
+Path = "/s/bunches/cvi/General/Message Window/Message_window.uir"
+Exclude = False
+Project Flags = 0
+Folder = "Message Window"
+
+[File 0020]
+File Type = "CSource"
+Res Id = 20
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Message Window/Message_window_functions.c"
+Path = "/s/bunches/cvi/General/Message Window/Message_window_functions.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Message Window"
+
+[File 0021]
+File Type = "CSource"
+Res Id = 21
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Misc_General_Functions.c"
+Path = "/s/bunches/cvi/General/Misc_General_Functions.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Misc General Functions"
+
+[File 0022]
+File Type = "CSource"
+Res Id = 22
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../ScanController/ScanController_Client.c"
+Path = "/s/bunches/cvi/ScanController/ScanController_Client.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "ScanController"
+
+[File 0023]
+File Type = "Include"
+Res Id = 23
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../ScanController/ScanController_Client.h"
+Path = "/s/bunches/cvi/ScanController/ScanController_Client.h"
+Exclude = False
+Project Flags = 0
+Folder = "ScanController"
+
+[Folders]
+Source Files Folder Not Added Yet = True
+Include Files Folder Not Added Yet = True
+User Interface Files Folder Not Added Yet = True
+Instrument Files Folder Not Added Yet = True
+Folder 0 = "Matlab"
+Folder 1 = "ScanController"
+Folder 2 = "Experiment Monitor"
+Folder 3 = "Fit_NLLS"
+Folder 4 = "Message Window"
+Folder 5 = "Misc General Functions"
+
+[Compiler Options]
+Default Calling Convention = "cdecl"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = True
+Enable Unreachable Code Warning = True
+Enable Unreferenced Identifiers Warning = True
+Enable Assignment In Conditional Warning = True
+O Option Compatible With 5.0 = False
+Enable C99 Extensions = True
+Uninitialized Locals Compile Warning = "Aggressive"
+Precompile Prefix Header = False
+Prefix Header File = ""
+
+[Run Options]
+Stack Size = 250000
+Image Base Address = 4194304
+
+[Compiler Defines]
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+
+[Create Executable]
+Executable File_Debug Is Rel = True
+Executable File_Debug Rel To = "Project"
+Executable File_Debug Rel Path = "General_DLL_dbg.dll"
+Executable File_Debug = "/s/bunches/cvi/General/General_DLL_dbg.dll"
+Executable File_Release Is Rel = True
+Executable File_Release Rel To = "Project"
+Executable File_Release Rel Path = "General_DLL.dll"
+Executable File_Release = "/s/bunches/cvi/General/General_DLL.dll"
+Executable File_Debug64 Is Rel = True
+Executable File_Debug64 Rel To = "Project"
+Executable File_Debug64 Rel Path = "General_DLL.dll"
+Executable File_Debug64 = "/s/bunches/cvi/General/General_DLL.dll"
+Executable File_Release64 Is Rel = True
+Executable File_Release64 Rel To = "Project"
+Executable File_Release64 Rel Path = "General_DLL.dll"
+Executable File_Release64 = "/s/bunches/cvi/General/General_DLL.dll"
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+DLL Exports = "Include File Symbols"
+Export File1 = "General_DLL.h"
+DLL Import Library Choice = "Gen Lib For Current Mode"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+Type Lib Guid = ""
+Runtime Support = "Full Runtime Support"
+Instrument Driver Support Only = False
+Embed Project .UIRs = True
+Generate Map File = False
+
+[External Compiler Support]
+UIR Callbacks File Option = 0
+Using LoadExternalModule = False
+Create Project Symbols File = True
+UIR Callbacks Obj File Is Rel = False
+UIR Callbacks Obj File = ""
+Project Symbols H File Is Rel = False
+Project Symbols H File = ""
+Project Symbols Obj File Is Rel = False
+Project Symbols Obj File = ""
+
+[ActiveX Server Options]
+Specification File Is Rel = False
+Specification File = ""
+Source File Is Rel = False
+Source File = ""
+Include File Is Rel = False
+Include File = ""
+IDL File Is Rel = False
+IDL File = ""
+Register ActiveX Server = False
+
+[Signing Info]
+Sign = False
+Sign Debug Build = False
+Store = ""
+Certificate = ""
+Timestamp URL = ""
+URL = ""
+
+[Manifest Info]
+Embed = False
+
+[tpcSection]
+tpcEnabled = 0
+tpcOverrideEnvironment = 0
+

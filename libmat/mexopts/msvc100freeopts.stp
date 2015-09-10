@@ -1,0 +1,113 @@
+#  $Revision: 1.1.8.2 $
+#  Copyright 2010 The MathWorks, Inc.
+
+sub msvc100freeopts 
+{
+    my $input = shift;
+    my $default_location = "C:\\Program Files\\Microsoft Visual Studio 10.0";
+    my $sdk_dir = "";
+    my $registry_lookup_fcn = $input->{"registry_lookup"};
+
+    # Attempt to find the Windows sdk that corresponds to VS2010
+    my $sdk_dir =  &$registry_lookup_fcn("SOFTWARE\\Microsoft\\Microsoft SDKs\\Windows\\v7.0A" , "InstallationFolder");
+
+    my @language_handled = ('C');
+    my $locate_fcn = sub {
+        my @valid_locations = ();
+        my $env_location;
+        my $registry_location;
+        my $candidate_location;
+
+        my $is_valid_root_fcn = sub {
+            my $candidate_location = shift;
+            my $isvalid = 0;
+            if ($candidate_location ne "" &&  
+                -e "$candidate_location\\VC\\bin\\cl.exe" &&
+                !-e "$candidate_location\\Common7\\IDE\\devenv.exe" &&
+                -e "$candidate_location\\Common7\\IDE\\VCExpress.exe") { 
+                $oldPath = $ENV{'PATH'};
+                $ENV{'PATH'} = "$candidate_location\\Common7\\IDE;$oldPath";
+                if (&correct_version("$candidate_location\\VC\\bin\\cl.exe","16.0")){ 
+                    $isvalid = 1;
+                }
+                $ENV{'PATH'} = "$oldPath";
+            }
+            return $isvalid;
+        };
+
+        # Search the default environment variable location. 
+        # Since MSVC 2010 Professional ed. and the Express ed.
+        # use the same environment variable (VS100COMNTOOLS),
+        # use the directory structure to differentiate between the two.
+        $env_location = $ENV{'VS100COMNTOOLS'}; 
+            $env_location =~ s|\\+Common7\\+Tools\\*$||i; 
+            $candidate_location = $env_location;
+            if (&$is_valid_root_fcn($candidate_location)) {
+                push(@valid_locations, $candidate_location);
+        }
+
+        # Search the registry. 
+        $registry_location = &$registry_lookup_fcn("SOFTWARE\\Microsoft\\VCExpress\\10.0\\" .
+                                            "Setup\\VS", "ProductDir");
+        $candidate_location = $registry_location;
+        if (&$is_valid_root_fcn($candidate_location)) {
+            push(@valid_locations, $candidate_location);
+        }
+
+        # Search the default install location. 
+        $candidate_location = $default_location;
+        if (&$is_valid_root_fcn($candidate_location)) {
+            push(@valid_locations, $candidate_location);
+        }
+        
+        return @valid_locations;
+    };
+
+    my $root_val = sub {
+        my $erred = 0;
+        my $base_directory = shift;
+        my $sdk_location = &$registry_lookup_fcn("SOFTWARE\\Microsoft\\Microsoft SDKs\\Windows\\v7.0A" , 
+                                  "InstallationFolder");
+        if ($sdk_location eq "" ||
+            !-e "$sdk_location\\bin\\mt.exe"){
+            print "\n*****************************************************************************\n" .
+                  "  Error: Microsoft Visual C++ 2010 requires the Microsoft Windows Software \n" .
+                  "         Development Kit (SDK), but the SDK cannot be found.  Examine your  \n" .
+                  "         Microsoft Visual C++ 2010 installation.\n" .
+                  "*****************************************************************************\n";
+            $erred = 1;
+        }
+
+        if (!$erred) {
+        print "\n***************************************************************************\n" .
+              "  Warning: MEX-files generated using Microsoft Visual C++ 2010 require\n" .
+              "           that Microsoft Visual Studio 2010 run-time libraries be \n" .
+              "           available on the computer they are run on.\n" .
+              "           If you plan to redistribute your MEX-files to other MATLAB\n" .
+              "           users, be sure that they have the run-time libraries.\n" . 
+              "***************************************************************************\n";
+        return $base_directory;
+        } else {
+            return;
+        }
+
+    };
+
+# In the case of the VS2010 compiler the link_val key is used to specify
+# the location of the SDK
+
+    return {
+        "vendor_name"      => "Microsoft Visual C++ 2010 Express",
+        "version"          => "",                          #This version is left blank intentionally. 
+        "group_id"         => "MSVC",
+        "serial"           => 10.01,
+        "root_var"         => "VSINSTALLDIR",
+        "optfile_name"     => "msvc100freeopts.bat",
+        "default_location" => $default_location,
+        "language_handled" => \@language_handled,
+        "root_val"         => $root_val,
+        "link_val"         => $sdk_dir,
+        "locate"           => $locate_fcn,
+        };
+}
+1;

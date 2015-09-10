@@ -1,0 +1,277 @@
+[Workspace Header]
+Version = 900
+Pathname = "/s/UCP/Software/General/General_DLL.cws"
+CVI Dir = "/c/program files/national instruments/cvi90"
+CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/Documents and Settings/All Users/Application Data/National Instruments/CVI90"
+CVI Pub Global Dir = "/C/Documents and Settings/All Users/Application Data/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files/IVI Foundation/VISA/winnt"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "General_DLL.prj"
+Project 0001 Folder Matlab Collapsed = True
+Project 0001 Folder Fit_NLLS Collapsed = True
+Project 0001 Folder Message Window Collapsed = True
+Project 0001 Folder Misc General Functions Collapsed = True
+Drag Bar Left = 253
+Window Top = 32
+Window Left = 337
+Window Bottom = 500
+Window Right = 1699
+Maximized = False
+Maximized Children = True
+Max Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win For Warnings = True
+Show Build Dialog = False
+Save Changes Before Running = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 8
+Window Confinement Region Enabled = True
+MainColumnWidth = 234
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+StatusColumnWidth = 70
+
+[Project Header 0001]
+Version = 900
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+Force Rebuild = False
+
+[File 0001]
+Path = "/s/UCP/Software/General/Matlab/Matlab.fp"
+File Type = "Function Panel"
+Disk Date = 3354783187
+In Projects = "1,"
+
+[File 0002]
+Path = "/s/UCP/Software/General/Message Window/Message_window_functions.c"
+File Type = "CSource"
+Disk Date = 3395207098
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Window Z-Order = 8
+Source Window State = "1,151,151,151,8,40,40,0,3,80,0,0,0,0,0,25,130,0,151,8,427,855,1,0,"
+
+[File 0003]
+Path = "/s/UCP/Software/General/General_DLL.h"
+File Type = "Include"
+Disk Date = 3397806272
+In Projects = "1,"
+Window Top = 242
+Window Left = 118
+Window Z-Order = 3
+Source Window State = "1,171,171,171,0,47,47,0,0,80,0,0,0,0,0,25,21,0,25,41,427,855,1,0,"
+
+[File 0004]
+Path = "/s/UCP/Software/Experiment monitor/ExpMonitor_Client.h"
+File Type = "Include"
+Disk Date = 3399447411
+In Projects = "1,"
+Window Top = 152
+Window Left = 70
+Window Z-Order = 5
+Source Window State = "1,0,25,25,0,26,26,0,0,67,0,0,0,0,0,20,0,0,8,19,349,719,1,0,"
+
+[File 0005]
+Path = "/s/UCP/Software/Experiment monitor/Experiment_Monitor_Timer.h"
+File Type = "Include"
+Disk Date = 3399455674
+In Projects = "1,"
+Window Top = 232
+Window Left = 114
+Window Z-Order = 7
+Source Window State = "1,0,0,0,0,0,0,0,0,67,0,0,0,0,0,20,0,0,0,0,349,719,1,0,"
+
+[File 0006]
+Path = "/s/UCP/Software/General/Message Window/Message_window.h"
+File Type = "Include"
+Disk Date = 3395207098
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Window Z-Order = 6
+Source Window State = "1,0,0,0,0,0,0,0,0,80,0,0,0,0,0,25,0,0,0,0,427,855,1,0,"
+
+[File 0007]
+Path = "/s/UCP/Software/ScanController/ScanController_Client.h"
+File Type = "Include"
+Disk Date = 3405057533
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Window Z-Order = 2
+Source Window State = "1,3,3,3,8,65,8,0,0,80,0,0,0,0,0,25,0,0,3,64,427,855,1,0,"
+
+[File 0008]
+Path = "/s/UCP/Software/Experiment monitor/ExpMonitor_Client.c"
+File Type = "CSource"
+Disk Date = 3402567291
+In Projects = "1,"
+Window Top = 30
+Window Left = 6
+Window Z-Order = 4
+Source Window State = "1,20,20,20,10,19,10,0,0,64,0,78,0,0,0,20,0,0,402,14,349,687,1,0,"
+
+[File 0009]
+Path = "/s/UCP/Software/Experiment monitor/Experiment_Monitor_Timer.uir"
+File Type = "User Interface Resource"
+Disk Date = 3399455674
+In Projects = "1,"
+
+[File 0010]
+Path = "/s/UCP/Software/General/Fit_NLLS/fit_Axb.c"
+File Type = "CSource"
+Disk Date = 3395207097
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0011]
+Path = "/s/UCP/Software/General/Fit_NLLS/fit_compiler.c"
+File Type = "CSource"
+Disk Date = 3395207097
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0012]
+Path = "/s/UCP/Software/General/Fit_NLLS/fit_compiler.h"
+File Type = "Include"
+Disk Date = 3395207097
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0013]
+Path = "/s/UCP/Software/General/Fit_NLLS/fit_levmar.h"
+File Type = "Include"
+Disk Date = 3395207097
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Source Window State = "1,353,355,353,0,138,0,0,0,0,0,0,0,0,0,0,314,0,355,20,427,855,1,0,"
+
+[File 0014]
+Path = "/s/UCP/Software/General/Fit_NLLS/fit_lm.c"
+File Type = "CSource"
+Disk Date = 3395207097
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0015]
+Path = "/s/UCP/Software/General/Fit_NLLS/fit_lm.h"
+File Type = "Include"
+Disk Date = 3395207097
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0016]
+Path = "/s/UCP/Software/General/Fit_NLLS/fit_misc.c"
+File Type = "CSource"
+Disk Date = 3395207097
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0017]
+Path = "/s/UCP/Software/General/Fit_NLLS/fit_misc.h"
+File Type = "Include"
+Disk Date = 3395207097
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0018]
+Path = "/s/UCP/Software/General/Matlab/Matlab.c"
+File Type = "CSource"
+Disk Date = 3395207093
+In Projects = "1,"
+Window Top = 333
+Window Left = 128
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,855,0,0,"
+
+[File 0019]
+Path = "/s/UCP/Software/General/Matlab/Matlab.h"
+File Type = "Include"
+Disk Date = 3395207093
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,0,0,0,0,0,0,0,"
+
+[File 0020]
+Path = "/s/UCP/Software/General/Matlab/MatlabFunctions.c"
+File Type = "CSource"
+Disk Date = 3397538042
+In Projects = "1,"
+Window Top = 232
+Window Left = 114
+Source Window State = "1,558,562,558,4,4,4,0,0,0,0,0,0,0,0,0,0,0,558,4,349,719,1,0,"
+
+[File 0021]
+Path = "/s/UCP/Software/General/Message Window/Message_window.uir"
+File Type = "User Interface Resource"
+Disk Date = 3376899867
+In Projects = "1,"
+Window Top = 32
+Window Left = 6
+Window Height = 427
+Window Width = 855
+
+[File 0022]
+Path = "/s/UCP/Software/General/Misc_General_Functions.c"
+File Type = "CSource"
+Disk Date = 3397808654
+In Projects = "1,"
+Window Top = 62
+Window Left = 22
+Source Window State = "1,109,109,109,34,41,41,0,0,0,0,5,0,5,0,0,68,0,91,11,427,855,1,0,"
+
+[File 0023]
+Path = "/s/UCP/Software/ScanController/ScanController_Client.c"
+File Type = "CSource"
+Disk Date = 3402643746
+In Projects = "1,"
+Window Top = 255
+Window Left = 126
+Window Z-Order = 1
+Source Window State = "1,338,338,338,8,22,22,0,3,162,0,0,0,0,0,58,0,0,338,8,349,719,1,0,"
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+
