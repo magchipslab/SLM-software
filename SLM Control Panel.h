@@ -1,6 +1,5 @@
 /**************************************************************************/
 /* LabWindows/CVI User Interface Resource (UIR) Include File              */
-/* Copyright (c) National Instruments 2015. All Rights Reserved.          */
 /*                                                                        */
 /* WARNING: Do not add to, delete from, or otherwise modify the contents  */
 /*          of this include file.                                         */
@@ -176,6 +175,10 @@
 #define  TABPANE_13_txtSHUnits            12      /* control type: textMsg, callback function: (none) */
 #define  TABPANE_13_txtSHUnits_2          13      /* control type: textMsg, callback function: (none) */
 #define  TABPANE_13_txtSHUnits_3          14      /* control type: textMsg, callback function: (none) */
+#define  TABPANE_13_SHxRight              15      /* control type: numeric, callback function: ShackHartmann_Callback */
+#define  TABPANE_13_SHxStep               16      /* control type: numeric, callback function: ShackHartmann_Callback */
+#define  TABPANE_13_SHyStep               17      /* control type: numeric, callback function: ShackHartmann_Callback */
+#define  TABPANE_13_SHyTop                18      /* control type: numeric, callback function: ShackHartmann_Callback */
 
      /* tab page panel controls */
 #define  TABPANE_14_About1                2       /* control type: textMsg, callback function: (none) */
@@ -334,6 +337,7 @@
      /* Control Arrays: */
 
 #define  CTRLARRAY                        1
+#define  CTRLARRAY_2                      2
 
      /* Menu Bars, Menus, and Menu Items: */
 

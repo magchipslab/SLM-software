@@ -15,6 +15,11 @@
 // the pixel size in micron
 extern double gCamPixelSize;
 
+//extern int gCamPresent;
+
+//extern int gRunCam;
+
+extern int* gColorMap;
 // number of pixels of canvas and camera feed
 extern int gCamX, gCamY;
 

@@ -937,7 +937,7 @@ int CVICALLBACK ScreenshotButton_Callback (int panel, int control, int event,
 				strcpy(matfilename, pngfilename);
 				strcpy((matfilename + StringLength(pngfilename) - 3), "mat");
 
-				// save the raw data as a Matlab .mat file
+				// save the raw data as a Matlab .mat file  
 				CameraSaveMatFile(matfilename, 1);
 			}
 
